@@ -53,12 +53,12 @@ MagicalContainer::SideCrossIterator& MagicalContainer::SideCrossIterator::operat
         index = sizeofcont;
         return *this;
     }
-    if( index > half)
+    else if( index > half)
     {
         index = sizeofcont - index;
         return *this;
     }
-    if( index < half)
+    else
     {
         index = sizeofcont - index - 1;
         return *this;
